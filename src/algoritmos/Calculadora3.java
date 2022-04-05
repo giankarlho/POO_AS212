@@ -16,8 +16,11 @@ public class Calculadora3 {
             char operador = ingreso.next().charAt(0);
             System.out.println("Ing. el sgte. nro. : ");
             nro2 = ingreso.nextDouble();
+            
+            // Consumiendo un método desde otra Clase
             CalculadoraS calculadoraS = new CalculadoraS();
             calculadoraS.calcular(nro1, operador, nro2);
+            
             nro1 = calculadoraS.resultado;
             System.out.println("El resultado es: " + nro1);
             System.out.println("Deseas continuar, escribe 1->SI o 2->NO : ");
