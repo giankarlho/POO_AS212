@@ -1,1 +1,6 @@
-# POO_AS212
+# Aplicaciones Gráficas con Java JSwing y JPanel
+
+* Calculadora
+* Rifa
+* Tómbola
+* Figuras
