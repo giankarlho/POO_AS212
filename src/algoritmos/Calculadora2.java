@@ -16,18 +16,13 @@ public class Calculadora2 {
             System.out.println("Ing. el sgte. nro. : ");
             nro2 = ingreso.nextDouble();
             switch (operador) {
-                case '+':
-                    resultado = nro1 + nro2;
-                    break;
+                case '+': resultado = nro1 + nro2; break;
                 case '-':
-                    resultado = nro1 - nro2;
-                    break;
+                    resultado = nro1 - nro2; break;
                 case '*':
-                    resultado = nro1 * nro2;
-                    break;
+                    resultado = nro1 * nro2; break;
                 case '/':
-                    resultado = nro1 / nro2;
-                    break;
+                    resultado = nro1 / nro2; break;
             }
             nro1 = resultado;
             System.out.println("El resultado es: " + resultado);

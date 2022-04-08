@@ -12,7 +12,7 @@ public class Aleatorio {
         
         // Opciòn 2
         int min=11,max=20;
-        int value2 = (int) (Math.random()*(max-min)) + min;
+        int value2 = (int) (Math.random()*(max)) + min;
 	System.out.println("Usando Math.random: " + value2);
         
         // Opciòn 3

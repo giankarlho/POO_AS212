@@ -18,7 +18,7 @@ public class Calculadora3 {
             nro2 = ingreso.nextDouble();
             CalculadoraS calculadoraS = new CalculadoraS();
             calculadoraS.calcular(nro1, operador, nro2);
-            nro1 = calculadoraS.resultado;
+            nro1 = calculadoraS.dobResultado;
             System.out.println("El resultado es: " + nro1);
             System.out.println("Deseas continuar, escribe 1->SI o 2->NO : ");
             estado = ingreso.nextInt();            
