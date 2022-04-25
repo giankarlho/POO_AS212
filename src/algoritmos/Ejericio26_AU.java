@@ -17,6 +17,9 @@ public class Ejericio26_AU {
             System.out.println("Aprobó");
         } else {
             System.out.println("Desaprobó");
-        }        
+        }   
+        // Redondeando
+        System.out.println(Math.round(promedio*100.0)/100.0);
+        System.out.println(String.format("%.2f",promedio));
     }
 }
