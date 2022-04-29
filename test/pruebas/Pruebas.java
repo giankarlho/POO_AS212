@@ -2,10 +2,12 @@ package pruebas;
 
 public class Pruebas {
     public static void main(String[] args) {
-        int min=1,max=6;
+        for (int i=0; i<10; i=i++){
+            System.out.print(" i antes: " + i);
+            i+=1;
+            System.out.print(" i después: " + i);
+            System.out.println("Hello");
+        }       
         
-        int value2 = (int) (Math.random()*max) + min;
-	System.out.println("Usando Math.random: " + value2);
-        System.out.println("Math.random(): " + Math.random()*10);
     }
 }
