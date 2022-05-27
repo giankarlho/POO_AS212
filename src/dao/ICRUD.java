@@ -9,7 +9,7 @@ public interface ICRUD<Generic> {
 
     void modificar(Generic object) throws Exception;
 
-    void eliminar(Generic object) throws Exception;
+    void eliminar(int codigo) throws Exception;
 
     List<Generic> listarTodos() throws Exception;
 }

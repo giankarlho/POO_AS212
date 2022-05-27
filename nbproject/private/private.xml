@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/Joaquin/Documents/NetBeansProjects/POO_AS212/AS212_MySQL11/src/modelo/Paciente.java</file>
+            <file>file:/C:/Users/Joaquin/Documents/NetBeansProjects/POO_AS212/AS212_MySQL11/src/controlador/PacienteC.java</file>
+            <file>file:/C:/Users/Joaquin/Documents/NetBeansProjects/POO_AS212/AS212_MySQL11/src/dao/PacienteImpl.java</file>
+            <file>file:/C:/Users/Joaquin/Documents/NetBeansProjects/POO_AS212/AS212_MySQL11/src/vistas/Paciente.java</file>
+            <file>file:/C:/Users/Joaquin/Documents/NetBeansProjects/POO_AS212/AS212_MySQL11/src/dao/ICRUD.java</file>
+            <file>file:/C:/Users/Joaquin/Documents/NetBeansProjects/POO_AS212/AS212_MySQL11/src/vistas/PacienteView.java</file>
+            <file>file:/C:/Users/Joaquin/Documents/NetBeansProjects/POO_AS212/AS212_MySQL11/src/dao/Conexion.java</file>
+        </group>
+    </open-files>
 </project-private>

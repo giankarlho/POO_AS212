@@ -6,9 +6,9 @@ import java.sql.DriverManager;
 
 public class Conexion {
 
-    public static Connection cnx = null;
+    public Connection cnx = null;
 
-    public static Connection conectar() throws Exception{
+    public Connection conectar() throws Exception{
        if (cnx != null) return cnx;
         try {
             String user="root";
@@ -29,8 +29,9 @@ public class Conexion {
     }
     
     public static void main(String[] args) throws Exception{
-        Conexion.conectar();
-        if (cnx !=null) System.out.println("ok, conectado 😎");
+        Conexion conexion = new Conexion();
+        conexion.conectar();
+        if (conexion.cnx !=null) System.out.println("ok, conectado 😎");
         else System.out.println("Conexión cerrada 😢");
     }
     
