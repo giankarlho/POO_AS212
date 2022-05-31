@@ -4,12 +4,12 @@ import java.util.List;
 
 public interface ICRUD<Generic> {
 
-    // Los métodos DML: insert, delete, update, merge, restore record
+    // Los métodos DML BD: insert, delete, update, merge, restore record
     void registrar(Generic object) throws Exception;
 
     void modificar(Generic object) throws Exception;
 
     void eliminar(int codigo) throws Exception;
 
-    List<Generic> listarTodos() throws Exception;
+//    List<Generic> listarTodos() throws Exception;
 }

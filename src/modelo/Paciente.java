@@ -78,6 +78,8 @@ public class Paciente {
     public void setUbigeo(String ubigeo) {
         this.ubigeo = ubigeo;
     }
+
+    
     
 
 }
