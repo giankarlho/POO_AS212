@@ -40,7 +40,7 @@ public class PacienteImpl extends Conexion implements ICRUD<Paciente>{
             ps.setString(2,paciente.getApellido());
             ps.setString(3,paciente.getSexo());
             ps.setString(4,paciente.getDni());
-            ps.setDate(5, (Date) paciente.getNacimiento());
+            ps.setDate(5, UtilToSql.convert(paciente.getNacimiento()));
             ps.setString(6,paciente.getDir());
             ps.setString(7,paciente.getUbigeo());
             ps.setInt(8,paciente.getCodigo());

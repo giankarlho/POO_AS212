@@ -22,12 +22,30 @@ public class PacienteC implements Serializable {
     public void registrar() {
         try {
             setVariables();
-            dao.registrar(pac);
+            dao.registrar(pac);            
         } catch (Exception e) {
             System.out.println("Error en PacienteC/registrar: " + e.getMessage());
         }
     }
+    
+    public void modificar(){
+        try {
+            pac.setCodigo(Integer.parseInt(PacienteView.jlblCodigo.getText()));
+            setVariables();
+            dao.modificar(pac);
+        } catch (Exception e) {
+            System.out.println("Error en PacienteC/modificar: " + e.getMessage());
+        }
+    }
 
+    public void eliminar(){
+        try {
+            pac.setCodigo(Integer.parseInt(PacienteView.jlblCodigo.getText()));
+            dao.eliminar(pac.getCodigo());
+        } catch (Exception e) {
+            System.out.println("Error en PacienteC/eliminar: " + e.getMessage());
+        }
+    }
     public void listar(DefaultTableModel modelo, Integer tipo, String dato) {
         try {
             dao.listar(modelo, tipo, dato);
@@ -37,15 +55,11 @@ public class PacienteC implements Serializable {
     }
 
     public void setVariables() {
-        try {
-//            PacienteView paciente = new PacienteView();
-//            pac.setSexo(paciente.sexo);         
-
+        try {   
             pac.setNombre(PacienteView.jtxtNombre.getText());
             pac.setApellido(PacienteView.jtxtApellido.getText());
             pac.setSexo(PacienteView.sexo);
             pac.setDni(PacienteView.jtxtDni.getText());
-//            SimpleDateFormat formato = new SimpleDateFormat("yyyy-MM-dd");            
             pac.setNacimiento(PacienteView.jdcNac.getDate());
             pac.setDir(PacienteView.jtxtdir.getText());
             pac.setUbigeo(PacienteView.jtxtUbigeo.getText());
