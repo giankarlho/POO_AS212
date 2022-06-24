@@ -2,8 +2,6 @@ package controlador;
 
 import dao.PacienteImpl;
 import java.io.Serializable;
-import java.text.SimpleDateFormat;
-import java.sql.Date;
 import javax.swing.table.DefaultTableModel;
 import modelo.Paciente;
 import vistas.PacienteView;
@@ -15,13 +13,13 @@ public class PacienteC implements Serializable {
     PacienteImpl dao;
 
     public PacienteC() {
-        pac = new Paciente();
-        dao = new PacienteImpl();
+        pac = new Paciente();        
     }
 
     public void registrar() {
         try {
             setVariables();
+            dao = new PacienteImpl();
             dao.registrar(pac);            
         } catch (Exception e) {
             System.out.println("Error en PacienteC/registrar: " + e.getMessage());
@@ -32,6 +30,7 @@ public class PacienteC implements Serializable {
         try {
             pac.setCodigo(Integer.parseInt(PacienteView.jlblCodigo.getText()));
             setVariables();
+            dao = new PacienteImpl();
             dao.modificar(pac);
         } catch (Exception e) {
             System.out.println("Error en PacienteC/modificar: " + e.getMessage());
@@ -41,6 +40,7 @@ public class PacienteC implements Serializable {
     public void eliminar(){
         try {
             pac.setCodigo(Integer.parseInt(PacienteView.jlblCodigo.getText()));
+            dao = new PacienteImpl();
             dao.eliminar(pac.getCodigo());
         } catch (Exception e) {
             System.out.println("Error en PacienteC/eliminar: " + e.getMessage());
@@ -48,6 +48,7 @@ public class PacienteC implements Serializable {
     }
     public void listar(DefaultTableModel modelo, Integer tipo, String dato) {
         try {
+            dao = new PacienteImpl();
             dao.listar(modelo, tipo, dato);
         } catch (Exception e) {
             System.out.println("Error en PacienteC/listar: " + e.getMessage());

@@ -12,6 +12,7 @@ public class Paciente {
     private String dir;
     private Date nacimiento;
     private String ubigeo;
+    private String estado;
     
     // Getter y Setter
 
@@ -77,6 +78,14 @@ public class Paciente {
 
     public void setUbigeo(String ubigeo) {
         this.ubigeo = ubigeo;
+    }
+
+    public String getEstado() {
+        return estado;
+    }
+
+    public void setEstado(String estado) {
+        this.estado = estado;
     }
 
     
