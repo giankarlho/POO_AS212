@@ -10,6 +10,8 @@ public interface ICRUD<Generic> {
     void modificar(Generic object) throws Exception;
 
     void eliminar(int codigo) throws Exception;
+    
+//    void cambiarEstado (char estado, int codigo) throws Exception;
 
 //    List<Generic> listarTodos() throws Exception;
 }

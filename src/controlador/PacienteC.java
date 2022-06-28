@@ -46,10 +46,10 @@ public class PacienteC implements Serializable {
             System.out.println("Error en PacienteC/eliminar: " + e.getMessage());
         }
     }
-    public void listar(DefaultTableModel modelo, Integer tipo, String dato) {
+    public void listar(DefaultTableModel modelo, Integer tipo, String dato, String estado) {
         try {
             dao = new PacienteImpl();
-            dao.listar(modelo, tipo, dato);
+            dao.listar(modelo, tipo, dato, estado);
         } catch (Exception e) {
             System.out.println("Error en PacienteC/listar: " + e.getMessage());
         }
@@ -79,6 +79,15 @@ public class PacienteC implements Serializable {
             PacienteView.jtxtUbigeo.setText("");
         } catch (Exception e) {
             System.out.println("Error en PacienteC/limpiar: " + e.getMessage());
+        }
+    }
+    
+    public void cambiarEstado(String estado){
+        try {
+            dao = new PacienteImpl();
+            dao.cambiarEstado(estado, Integer.parseInt(PacienteView.jlblCodigo.getText()));
+        } catch (Exception e) {
+            
         }
     }
 
